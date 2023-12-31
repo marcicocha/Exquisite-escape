@@ -50,14 +50,17 @@
                 </div>
               </div>
               <div class="submit-btn-wrapper">
-                <button type="submit" class="submit-btn">
-                  <span>Subscribe</span>
-                  <img
-                    src="@/assets/images/icons/email.svg"
-                    alt="mail"
-                    class="email-icon"
-                  />
-                </button>
+                <base-button variant="primary" type="submit">
+                  <div class="flex">
+                    <span>Subscribe</span>
+                    <img
+                      src="@/assets/images/icons/email.svg"
+                      alt="mail"
+                      class="ml-2"
+                      width="18"
+                    />
+                  </div>
+                </base-button>
               </div>
             </form>
           </div>
@@ -79,8 +82,8 @@ export default defineComponent({
       firstName: "",
     });
     const subscribeHandler = () => {
-      console.log(`Subscribed with email: ${this.subscribeObject.email}`);
-      this.subscribeObject = {
+      console.log(`Subscribed with email: ${this.subscribeObject.value.email}`);
+      this.subscribeObject.value = {
         email: "",
         lastName: "",
         firstName: "",
@@ -88,8 +91,8 @@ export default defineComponent({
     };
     return {
       subscribeObject,
-      subscribeHandler
-    }
+      subscribeHandler,
+    };
   },
 });
 </script>

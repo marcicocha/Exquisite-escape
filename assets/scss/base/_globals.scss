@@ -22,11 +22,14 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.3;
-  font-size: 18px;
+  font-size: 16px;
   height: auto;
   min-height: 100vh;
   color: $grey;
   font-family: "LotaGrostesqueRegular", sans-serif;
+  @media only screen and (min-width: 1280px) {
+    font-size: 18px;
+  }
 }
 ::-webkit-scrollbar {
   width: 8px;
@@ -104,6 +107,12 @@ ul {
   &--064 {
     letter-spacing: -0.64px;
   }
+  &--08 {
+    letter-spacing: -0.8px;
+  }
+  &--096 {
+    letter-spacing: -0.96px;
+  }
   &--128 {
     letter-spacing: -1.28px;
   }
@@ -141,6 +150,15 @@ ul {
   &-dark-gray {
     color: $dark-gray;
   }
+  &-dark-blue {
+    color: $dark-blue;
+  }
+  &-medium-gray {
+    color: $medium-gray;
+  }
+  &-medium-gray2 {
+    color: $medium-gray2;
+  }
   // size
   &-32 {
     font-size: 32px;
@@ -156,6 +174,20 @@ ul {
     background: $light-gray;
   }
   &-primary {
-    background: $primary
+    background: $primary;
+  }
+  &-cyan {
+    background: $cyan;
+  }
+  &-cyan-light2 {
+    background: $cyan-light2;
+  }
+}
+.border {
+  &-cyan {
+    border: 1px solid $cyan;
+  }
+  &-primary {
+    border: 1px solid $primary;
   }
 }

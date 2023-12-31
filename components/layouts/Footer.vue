@@ -41,13 +41,13 @@
         <div class="footer-block-title">Exquisite Escape</div>
         <ul class="footer-block-links">
           <li>
-            <router-link to="/#" class="footer-link">About us</router-link>
+            <router-link to="/about" class="footer-link">About us</router-link>
           </li>
           <li>
-            <router-link to="/#" class="footer-link">Blog</router-link>
+            <router-link to="/blog" class="footer-link">Blog</router-link>
           </li>
           <li>
-            <router-link to="/#" class="footer-link">Jobs</router-link>
+            <router-link to="/career" class="footer-link">Jobs</router-link>
           </li>
           <li>
             <router-link to="/#" class="footer-link">Contact us </router-link>

@@ -9,7 +9,7 @@
     </section>
     <section class="px-194 bg-light-gray pt-10 pb-16">
       <p class="text-32 text-darkgray2 mb-2 lh-42 ls--064">About</p>
-      <h1 class="text-primary text-64 lh-77 mb-2 font-bold --128">
+      <h1 class="text-primary text-64 lh-77 mb-2 font-bold lh--128">
         At Exquisite Escape, we believe that travel is more than just a journey
         from one place to another
       </h1>
@@ -136,15 +136,41 @@
     </section>
     <section class="px-98 pt-24">
       <div class="bg-primary text-white text-center py-12 text-center">
-        <div class="w-full lg:w-2/3 m-auto">
+        <div class="w-full lg:w-3/5 xl:w-6/12 m-auto">
           <h3 class="font-bold lh-52 text-4xl pb-7">Come work with us</h3>
-          <p class="text-lg mb-12">
+          <p class="text-lg lg:text-xl mb-12">
             Join us on a journey that transcends travel. Explore the world with
             us and discover the magic that lies beyond the destination. Your
             adventure awaits, and we are here to make it extraordinary.
           </p>
 
           <base-button variant="white-outline">See Open Position</base-button>
+        </div>
+      </div>
+    </section>
+    <section class="px-98 pt-24">
+      <div class="flex">
+        <img
+          src="@/assets/images/header-images/customer-care-woman.png"
+          alt="female customer rep"
+        />
+        <div class="px-16 lg:px-32 2xl:px-40">
+          <h2 class="font-bold text-4xl lh-42 ls--064 text-dark-gray mb-8">
+            Contact Us
+          </h2>
+          <p class="lh-26 mb-6">
+            Our company is a digital-first one. Even though our office is open
+            at all times, it is crucial that you contact us first.
+          </p>
+          <p class="underline text-dark-blue text-base mb-8">
+            Use Google Map ↗
+          </p>
+
+          <base-button variant="primary"
+            ><div class="flex">
+              <span>Book an appointment</span>
+              <img src="@/assets/images/icons/calendar-check-white.svg" alt="calendar check" class="ml-2" width="18px"/></div
+          ></base-button>
         </div>
       </div>
     </section>

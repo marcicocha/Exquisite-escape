@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <h2>Privacy Policy</h2>
+  <div class="lh-26">
+    <h2 class="font-bold text-dark-gray text-3xl ls--08 mb-4">
+      Privacy Policy
+    </h2>
     <section>
       <p>
         This Privacy Policy discloses the privacy practices for
@@ -23,8 +25,10 @@
         <li>How you can correct any inaccuracies in the information.</li>
       </ol>
     </section>
-    <section>
-      <h4>Information, collection, use, and sharing</h4>
+    <section class="mt-12">
+      <h4 class="mb-4 font-bold text-xl">
+        Information, collection, use, and sharing
+      </h4>
       <p>
         We are the sole owners of the information collected on this site. We
         only have access to/collect information that you voluntarily give us via
@@ -38,22 +42,27 @@
         tell you about specials, new products or services, or changes to this
         privacy policy.
       </p>
+      <br />
       <p>
         Information that we collect may be stored and processed in and
         transferred between any of the countries in which we operate in order to
         enable us use the information in accordance with this policy.
       </p>
+      <br />
       <p>
         Personal information that you publish on our website or submit for
         publication on our website may be available, via the internet, around
         the world. We cannot prevent the use or misuse of such information by
         others.
       </p>
+      <br />
       <p>
         You expressly agree to the transfers of personal information described
         in this Paragraph.
       </p>
+      <br />
       <p>Your Access to and Control Over Information</p>
+      <br />
       <p>
         You may opt out of any future contacts from us at any time. You can do
         the following at any time by contacting us via the email address or
@@ -65,13 +74,15 @@
         <li>Have us delete any data we have about you.</li>
         <li>Express any concern you have about our use of your data.</li>
       </ul>
+      <br />
+      <br />
       <p>
         Please let us know if the personal information that we hold about you
         needs to be corrected or updated.
       </p>
     </section>
-    <section>
-      <h4>Security</h4>
+    <section class="mt-12">
+      <h4 class="mb-4 font-bold text-xl">Security</h4>
       <p>
         We take precautions to protect your information. When you submit
         sensitive information via the website, your information is protected
@@ -88,8 +99,8 @@
         identifiable information are kept in a secure environment.
       </p>
     </section>
-    <section>
-      <h4>Security</h4>
+    <section class="mt-12">
+      <h4 class="mb-4 font-bold text-xl">Security</h4>
       <p>
         Our Privacy Policy may change from time to time and all updates will be
         posted on this page. <br />
@@ -98,8 +109,8 @@
         bookings@exquisiteescape.com.
       </p>
     </section>
-    <section>
-      <h4>Registration</h4>
+    <section class="mt-12">
+      <h4 class="mb-4 font-bold text-xl">Registration</h4>
       <p>
         For effective use of this website, users are advised to complete the
         registration form. During registration a user is required to give
@@ -110,8 +121,8 @@
         is not required.
       </p>
     </section>
-    <section>
-      <h4>Cookies</h4>
+    <section class="mt-12">
+      <h4 class="mb-4 font-bold text-xl">Cookies</h4>
       <p>
         We use "cookies" on this site. A cookie is a piece of data stored on a
         site visitor's hard drive to help us improve your access to our site and
@@ -127,8 +138,8 @@
         cookies.
       </p>
     </section>
-    <section>
-      <h4>Sharing</h4>
+    <section class="mt-12">
+      <h4 class="mb-4 font-bold text-xl">Sharing</h4>
       <p>
         We share aggregated demographic information with our partners and
         advertisers. This is not linked to any personal information that can
@@ -137,6 +148,7 @@
         share, store or use personally identifiable information for any
         secondary purposes beyond fulfilling your order.
       </p>
+      <br />
       <p>
         We partner with other parties to provide specific services. When the
         user signs up for these services, we will share names, or other contact
@@ -144,15 +156,18 @@
         services. These parties are not allowed to use personally identifiable
         information except for the purpose of providing these services.
       </p>
+      <br />
       <p>
         Using the Exquisite Escape SIM card, mobile phone and tablet Apps (the
         "Mobile Apps")
       </p>
+      <br />
       <p>
         When you use a Exquisite Escape SIM Card or Mobile App, we collect and
         use information about you in the same way and for the same purposes as
         we do when you use our website.
       </p>
+      <br />
       <p>
         In addition to this, we also use some other information that we collect
         automatically when you use our Mobile Apps e.g. we collect information
@@ -179,19 +194,24 @@
         website.
       </p>
     </section>
-    <section>
-      <h4>Links</h4>
+    <section class="mt-12">
+      <h4 class="mb-4 font-bold text-xl">Links</h4>
       <p>
         This web site contains links to other sites. Our website includes
         hyperlinks to, and details of, third party websites.
       </p>
+      <br />
       <p>
-        This web site contains links to other sites. Our website includes
-        hyperlinks to, and details of, third party websites.
+        Please be aware that we are not responsible and have no control over the
+        content or privacy practices of such other sites. We encourage our users
+        to be aware when they leave our site to read the privacy statements of
+        any other site that collects personally identifiable information.
       </p>
     </section>
-    <section>
-      <h4>Visiting our website out for Nigeria</h4>
+    <section class="mt-12">
+      <h4 class="mb-4 font-bold text-xl">
+        Visiting our website out for Nigeria
+      </h4>
       <p>
         If you are visiting our website from outside Nigeria, please be aware
         that your information may be transferred to, stored, and processed in
@@ -204,8 +224,8 @@
         in this Policy.
       </p>
     </section>
-    <section>
-      <h4>Surveys & contest/promotions</h4>
+    <section class="mt-12">
+      <h4 class="mb-4 font-bold text-xl">Surveys & contest/promotions</h4>
       <p>
         From time-to-time our site requests information via surveys or contests.
         Participation in these surveys or contests is completely voluntary and
@@ -217,23 +237,23 @@
         monitoring or improving the use and satisfaction of this site.
       </p>
     </section>
-    <section>
-      <h4>Online privacy policy only</h4>
+    <section class="mt-12">
+      <h4 class="mb-4 font-bold text-xl">Online privacy policy only</h4>
       <p>
         This privacy policy applies only to information collected through our
         website and not to information collected offline.
       </p>
     </section>
-    <section>
-      <h4>Terms and Conditions</h4>
+    <section class="mt-12">
+      <h4 class="mb-4 font-bold text-xl">Terms and Conditions</h4>
       <p>
         Please also visit our Terms and Conditions section establishing the use,
         disclaimers and limitations of liability governing the use of our
         website at http://www.exquisiteescape.com
       </p>
     </section>
-    <section>
-      <h4>Your consent</h4>
+    <section class="mt-12">
+      <h4 class="mb-4 font-bold text-xl">Your consent</h4>
       <p>By using our site, you consent to our Privacy Policy.</p>
     </section>
   </div>
@@ -245,3 +265,13 @@ export default defineComponent({
   setup() {},
 });
 </script>
+<style lang="scss" scoped>
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+</style>

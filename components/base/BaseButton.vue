@@ -1,6 +1,6 @@
 <template>
   <button
-    class="btn z-1000 font-medium centered_row outline-none focus:outline-none py-4 px-6 rounded-lg"
+    class="btn z-1000 font-medium centered_row outline-none focus:outline-none rounded-lg"
     :class="[
       styles,
       {
@@ -10,6 +10,8 @@
         'bg-white text-white button-white-outline': variant === 'white-outline',
         'bg-gray text-dark-gray button-neutral': variant === 'neutral',
         'bg-primary text-white button-primary': variant === 'primary',
+        'py-2 px-2 lg:px-6 text-sm': size === 'small',
+        'py-4 px-4 lg:px-6 text-base': size === 'medium',
       },
     ]"
     :disabled="disabled || processing"
@@ -20,7 +22,7 @@
       <p>Loading ...</p>
       <!-- <img src="@/assets/images/loader.gif" class="h-12 object-cover w-full" /> -->
     </div>
-    <div v-else class="px-8">
+    <div v-else>
       <div><slot name="preIcon" class="ml-2 lg:ml-0" /></div>
       <span v-if="text !== ''" class="ml-3" :class="[`${textClass}`]">{{
         text
@@ -39,7 +41,8 @@
     <div v-show="!processing" class="ml-3"><slot name="postIcon" /></div> -->
   </button>
 </template>
-<script lang="ts">
+
+<script setup lang="ts">
 import { defineComponent, defineProps } from "vue";
 
 type baseButtonProps = {
@@ -53,41 +56,43 @@ type baseButtonProps = {
   variant: string;
   size?: string;
 };
-export default defineComponent({
-  setup() {
-    const props = defineProps({
-      disabled: {
-        type: Boolean,
-        default: false,
-      },
-      processing: {
-        type: Boolean,
-        default: false,
-      },
-      styles: {
-        type: String,
-        default: "",
-      },
-      text: {
-        type: String,
-        default: "",
-      },
-      textClass: {
-        type: String,
-        default: "",
-      },
-      to: {
-        type: String,
-        default: "",
-      },
-      variant: {
-        type: String,
-        default: "primary",
-      },
-    });
-    const { disabled, variant, to, textClass, processing, styles } = props;
+const props = defineProps({
+  disabled: {
+    type: Boolean,
+    default: false,
+  },
+  processing: {
+    type: Boolean,
+    default: false,
+  },
+  styles: {
+    type: String,
+    default: "",
+  },
+  text: {
+    type: String,
+    default: "",
+  },
+  textClass: {
+    type: String,
+    default: "",
+  },
+  to: {
+    type: String,
+    default: "",
+  },
+  variant: {
+    type: String,
+    default: "primary",
+  },
+  size: {
+    type: String,
+    default: "medium",
   },
 });
+// export default defineComponent({
+//   setup() {},
+// });
 </script>
 <style lang="scss" scoped>
 @import "@/assets/scss/base/variables";
@@ -97,10 +102,15 @@ export default defineComponent({
   }
   &-white-outline {
     border: 1px solid white;
+    background: transparent;
   }
   &-primary {
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
     border: 1px solid $primary-light;
   }
+}
+.disabled {
+  border: 1px solid $cyan-light;
+  background: $cyan-light
 }
 </style>
