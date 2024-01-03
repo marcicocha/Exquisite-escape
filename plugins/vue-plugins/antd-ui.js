@@ -1,5 +1,5 @@
-import Vue from 'vue';
-import Antd from 'ant-design-vue/lib';
+import { createApp } from "vue";
+// import Antd from "ant-design-vue/lib";
 import {
   Table,
   Dropdown,
@@ -12,34 +12,20 @@ import {
   Checkbox,
   Badge,
   Switch,
-} from 'ant-design-vue';
+} from "ant-design-vue";
 
-import 'ant-design-vue/lib/table/style/index.less';
-import 'ant-design-vue/lib/dropdown/style/index.less';
-import 'ant-design-vue/lib/menu/style/index.less';
-import 'ant-design-vue/lib/modal/style/index.less';
-import 'ant-design-vue/lib/tabs/style/index.less';
-import 'ant-design-vue/lib/radio/style/index.less';
-import 'ant-design-vue/lib/drawer/style/index.less';
-import 'ant-design-vue/lib/collapse/style/index.less';
-import 'ant-design-vue/lib/notification/style/index.less';
-import 'ant-design-vue/lib/checkbox/style/index.less';
-import 'ant-design-vue/lib/badge/style/index.less';
-import 'ant-design-vue/lib/switch/style/index.less';
+export default defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.vueApp.use(Table);
+  nuxtApp.vueApp.use(Dropdown);
+  nuxtApp.vueApp.use(Menu);
+  nuxtApp.vueApp.use(Modal);
+  nuxtApp.vueApp.use(Tabs);
+  nuxtApp.vueApp.use(Radio);
+  nuxtApp.vueApp.use(Drawer);
+  nuxtApp.vueApp.use(Collapse);
 
-
-Vue.use(Table);
-Vue.use(Dropdown);
-Vue.use(Menu);
-Vue.use(Modal);
-Vue.use(Tabs);
-Vue.use(Radio);
-Vue.use(Drawer);
-Vue.use(Collapse);
-
-// Vue.use(Antd);
-Vue.use(Checkbox);
-Vue.use(Badge);
-Vue.use(Switch);
-
-Vue.use(Antd);
+  // nuxtApp.vueApp.use(Antd);
+  nuxtApp.vueApp.use(Checkbox);
+  nuxtApp.vueApp.use(Badge);
+  nuxtApp.vueApp.use(Switch);
+});

@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import { defineComponent, defineProps } from "vue";
-import paperPlane from "@/assets/images/illustration/paper-plane.svg";
+import paperPlane from "@/assets/images/illustrations/paper-plane.svg";
 
 export default defineComponent({
   components:{

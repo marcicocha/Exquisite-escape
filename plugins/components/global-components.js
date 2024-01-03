@@ -1,7 +1,8 @@
-import Vue from "vue";
-
+import { defineComponent } from "vue";
 import BaseButton from "@/components/base/BaseButton";
 import BaseIcons from "@/components/base/BaseIcons";
 
-Vue.component("BaseButton", BaseButton);
-Vue.component("BaseIcons", BaseIcons);
+export default defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.vueApp.component("BaseButton", BaseButton);
+  nuxtApp.vueApp.component("BaseIcons", BaseIcons);
+});

@@ -10,9 +10,9 @@ export default defineNuxtConfig({
       title: "Exquisite Escape",
     },
   },
-  css: ["~/assets/css/tailwind.css", "~/assets/scss/main.scss",],
+  css: ["~/assets/css/tailwind.css", "~/assets/scss/main.scss"],
   modules: [],
-  plugins: ['@/plugins/vue-plugins/antd-ui', '@/plugins/components/global-components'],
+  plugins: ['~/plugins/vue-plugins/antd-ui.js', '@/plugins/components/global-components'],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -28,4 +28,15 @@ export default defineNuxtConfig({
       }),
     ],
   },
+  // build: {
+  //   loaders: {
+  //     less: {
+  //       modifyVars: {
+  //         // Your theme variables
+  //       },
+  //       javascriptEnabled: true,
+  //     },
+  //   },
+  // },
+
 })

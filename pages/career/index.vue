@@ -26,12 +26,46 @@
     </section>
     <section class="flex justify-between px-98 my-24">
       <div class="w-1/2">
-        <img src="@/assets/images/header-images/counselling.png" alt="counselling"/>
+        <img
+          src="@/assets/images/header-images/counselling.png"
+          alt="counselling"
+        />
       </div>
       <div class="w-1/2">
         <p class="font-bold lh-52 ls--08 text-3xl">
           Exquisite Escape Culture + Values
         </p>
+        <div>
+          <a-collapse v-model:activeKey="activeKey" :bordered="false">
+            <a-collapse-panel key="1" header="Client-Centered Excellence">
+              <p>
+                Our unwavering commitment to placing our clients' needs at the
+                forefront ensures that every travel experience we craft is a
+                masterpiece of personalized service and meticulous attention to
+                detail.
+              </p>
+            </a-collapse-panel>
+            <a-collapse-panel key="2" header="Boundless Creativity">
+              <p>
+                Our unwavering commitment to placing our clients' needs at the
+                forefront ensures that every travel experience we craft is a
+                masterpiece of personalized service and meticulous attention to
+                detail.
+              </p>
+            </a-collapse-panel>
+            <a-collapse-panel
+              key="3"
+              header="Passion for Exceptional Adventures"
+            >
+              <p>
+                Our unwavering commitment to placing our clients' needs at the
+                forefront ensures that every travel experience we craft is a
+                masterpiece of personalized service and meticulous attention to
+                detail.
+              </p>
+            </a-collapse-panel>
+          </a-collapse>
+        </div>
       </div>
     </section>
     <section class="flex justify-between px-98">
@@ -69,6 +103,19 @@
     </section>
   </div>
 </template>
+<script lang="ts">
+import { defineComponent, ref } from "vue";
+
+export default defineComponent({
+  setup() {
+    const activeKey = ref(["1"]);
+    return {
+      activeKey,
+    };
+  },
+});
+</script>
+
 <style lang="scss" scoped>
 .header {
   position: relative;
