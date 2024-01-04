@@ -12,6 +12,7 @@ import {
   Checkbox,
   Badge,
   Switch,
+  Carousel,
 } from "ant-design-vue";
 
 export default defineNuxtPlugin((nuxtApp) => {
@@ -28,4 +29,5 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.use(Checkbox);
   nuxtApp.vueApp.use(Badge);
   nuxtApp.vueApp.use(Switch);
+  nuxtApp.vueApp.use(Carousel);
 });

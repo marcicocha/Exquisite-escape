@@ -32,11 +32,14 @@
         />
       </div>
       <div class="w-1/2">
-        <p class="font-bold lh-52 ls--08 text-3xl">
+        <p class="font-bold lh-52 ls--08 text-4xl mb-8">
           Exquisite Escape Culture + Values
         </p>
         <div>
-          <a-collapse v-model:activeKey="activeKey" :bordered="false">
+          <a-collapse v-model:activeKey="activeKey" :bordered="false" accordion>
+            <template #expandIcon="{ isActive }">
+              <div v-if="isActive" class="collapse-active" />
+            </template>
             <a-collapse-panel key="1" header="Client-Centered Excellence">
               <p>
                 Our unwavering commitment to placing our clients' needs at the
@@ -101,6 +104,7 @@
         ></base-button>
       </div>
     </section>
+    <section></section>
   </div>
 </template>
 <script lang="ts">
@@ -117,6 +121,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/scss/base/variables";
 .header {
   position: relative;
   &::after {
@@ -133,5 +138,20 @@ export default defineComponent({
     width: 50%;
     height: 64%;
   }
+}
+.ant-collapse-borderless {
+  background: transparent !important;
+}
+.collapse-active {
+  width: 50px;
+  height: 4px;
+  //   stroke-width: 4px;
+  background: $primary;
+}
+.ant-collapse-header-text {
+  font-size: 32px !important;
+  line-height: 42px; /* 131.25% */
+  letter-spacing: -0.64px;
+  color: $dark-gray;
 }
 </style>
