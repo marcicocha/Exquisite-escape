@@ -83,8 +83,20 @@ ul {
 // PADDING {
 .px {
   &-98 {
-    padding-left: 98px !important;
-    padding-right: 98px !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+    @media only screen and (min-width: 768px) {
+      padding-left: 36px !important;
+      padding-right: 36px !important;
+    }
+    @media only screen and (min-width: 1024px) {
+      padding-left: 52px !important;
+      padding-right: 52px !important;
+    }
+    @media only screen and (min-width: 1280px) {
+      padding-left: 98px !important;
+      padding-right: 98px !important;
+    }
   }
   &-162 {
     padding-right: 113px !important;
@@ -109,6 +121,9 @@ ul {
   }
   &--08 {
     letter-spacing: -0.8px;
+  }
+  &--072 {
+    letter-spacing: -0.72px;
   }
   &--096 {
     letter-spacing: -0.96px;

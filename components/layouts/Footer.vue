@@ -1,11 +1,11 @@
 <template>
   <footer class="px-98">
-    <div class="footer-grid">
-      <div class="footer-block">
+    <div class="md:flex justify-between flex-wrap">
+      <div class="footer-block mb-8 lg:mb-0 md:w-1/2 lg:w-1/4">
         <div class="footer-block-title">Support</div>
         <ul class="footer-block-links">
           <li>
-            <router-link to="/help-center" class="footer-link"
+            <router-link to="/about" class="footer-link"
               >Help Center</router-link
             >
           </li>
@@ -37,7 +37,7 @@
         </ul>
       </div>
 
-      <div class="footer-block">
+      <div class="footer-block mb-8 lg:mb-0 md:w-1/2 lg:w-1/4">
         <div class="footer-block-title">Exquisite Escape</div>
         <ul class="footer-block-links">
           <li>
@@ -61,7 +61,7 @@
         </ul>
       </div>
 
-      <div class="footer-block">
+      <div class="footer-block mb-8 lg:mb-0 md:w-1/2 lg:w-1/4">
         <div class="footer-block-title">Explore</div>
         <ul class="footer-block-links">
           <li>
@@ -82,7 +82,7 @@
         </ul>
       </div>
 
-      <div class="footer-block">
+      <div class="footer-block mb-8 lg:mb-0 md:w-1/2 lg:w-1/4">
         <div class="footer-block-title">Account</div>
         <ul class="footer-block-links">
           <li>
@@ -98,7 +98,7 @@
     </div>
 
     <div class="footer-note-wrapper flex justify-between items-center">
-      <div class="footer-copyright-side">
+      <div class="footer-copyright-side text-center lg:text-start">
         © 2023 Exquisite Escape an Applause Global Services Company ·
         <a href="#">Terms</a> · <a href="#">Sitemap</a> ·
         <a href="#">Privacy</a>
@@ -106,7 +106,11 @@
 
       <div class="footer-social-side flex items-center gap-20">
         <div class="flex items-center gap-10 font-bold">
-          <img src="@/assets/images/icons/globe.svg" alt="globe" class="globe-icon" />
+          <img
+            src="@/assets/images/icons/globe.svg"
+            alt="globe"
+            class="globe-icon"
+          />
           <span class="ls--036">English (US)</span>
         </div>
         <div class="font-bold ls--036">$ USD</div>

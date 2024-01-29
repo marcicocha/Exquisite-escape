@@ -24,7 +24,6 @@ export default defineComponent({
   setup() {
     const router = useRouter()
     const blogByIdHandler = () => {
-        console.log('it got here')
         router.push('/blog/2123323')
     };
     return {

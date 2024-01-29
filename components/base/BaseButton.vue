@@ -10,8 +10,8 @@
         'bg-white text-white button-white-outline': variant === 'white-outline',
         'bg-gray text-dark-gray button-neutral': variant === 'neutral',
         'bg-primary text-white button-primary': variant === 'primary',
-        'py-2 px-2 lg:px-6 text-sm': size === 'small',
-        'py-4 px-4 lg:px-6 text-base': size === 'medium',
+        'py-2 px-2 lg:px-3 text-xs md:text-sm': size === 'small',
+        'py-2 px-3 md:py-3 md:px-4 lg:px-4 xl:px-6 text-sm md:text-base': size === 'medium',
       },
     ]"
     :disabled="disabled || processing"
