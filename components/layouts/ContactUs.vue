@@ -2,8 +2,8 @@
   <div class="px-98">
     <div id="newsletter-block">
       <div class="container">
-        <div class="newsletter-text-form-wrapper flex justify-between">
-          <div class="newsletter-text-side">
+        <div class="newsletter-text-form-wrapper lg:flex justify-between">
+          <div class="newsletter-text-side w-full lg:w-1/2 mb-8 lg:mb-0">
             <h2 class="newsletter-block-title text-primary">
               Want to get the latest travel news and deals?
             </h2>
@@ -108,9 +108,7 @@ export default defineComponent({
   background: #0a0a0a;
   padding: 50px 25px;
 }
-.newsletter-text-side {
-  max-width: 48%;
-}
+
 h2.newsletter-block-title {
   font-size: 40px;
   margin: 0;

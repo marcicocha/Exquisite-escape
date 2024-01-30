@@ -8,8 +8,10 @@
       />
     </section>
     <section class="px-194 bg-light-gray pt-10 pb-16">
-      <p class="text-32 text-darkgray2 mb-2 lh-42 ls--064">About</p>
-      <h1 class="text-primary text-64 lh-77 mb-2 font-bold lh--128">
+      <p class="text-xl lg:text-3xl text-darkgray2 mb-2 lh-42 ls--064">About</p>
+      <h1
+        class="text-primary text-2xl lg:text-4xl xl:text-6xl lh-77 mb-2 font-bold lh--128"
+      >
         At Exquisite Escape, we believe that travel is more than just a journey
         from one place to another
       </h1>
@@ -38,7 +40,9 @@
         also distinguish our brand with incomparable customer service delivery
       </p>
       <br />
-      <p class="font-medium text-32 text-dark-gray mb-4 lh-42 ls--064">
+      <p
+        class="font-medium text-xl lg:text-3xl text-dark-gray mb-4 lh-42 ls--064"
+      >
         Our Preposition
       </p>
 
@@ -68,13 +72,16 @@
         executives.
       </p>
     </section>
-    <section class="flex mb-24 items-center">
+    <section class="lg:flex mb-24 items-center">
       <img
         src="@/assets/images/header-images/man-with-backpack.png"
         alt="man and woman with backpacks hiking the forest"
+        class="w-full lg:w-1/2"
       />
-      <div class="px-16 lg:px-32 2xl:px-40">
-        <h2 class="font-bold text-4xl lh-42 ls--064 text-dark-gray mb-8">
+      <div class="px-5 lg:px-32 2xl:px-40 w-full lg:w-1/2">
+        <h2
+          class="font-bold text-2xl lg:text-4xl lh-42 ls--064 mt-8 lg:mt-0 text-dark-gray mb-4 lg:mb-8"
+        >
           Exquisite Escape Mission
         </h2>
         <p class="lh-31">
@@ -87,14 +94,14 @@
       </div>
     </section>
     <section class="px-162">
-      <p class="text-4xl mb-16 font-bold lh-42">Why Choose Us</p>
-      <div class="grid grid-cols-2 gap-20">
+      <p class="text-2xl lg:text-4xl mb-16 font-bold lh-42">Why Choose Us</p>
+      <div class="md:grid md:grid-cols-2 gap-20">
         <div
           v-for="(feat, index) in whyUsFeatures"
           :key="index"
-          class="flex items-center"
+          class="flex items-center mb-5 md:mb-0"
         >
-          <div class="feature-container">
+          <div class="feature-container w-3/12">
             <img
               v-if="feat.imgPath === 'paper-plane.svg'"
               src="@/assets/images/illustrations/paper-plane.svg"
@@ -125,8 +132,8 @@
               class="feature-img"
             />
           </div>
-          <div class="pl-3">
-            <p class="text-darkgray2 text-xl ls--048 lh-31 mb-2">
+          <div class="pl-3 w-9/12">
+            <p class="text-darkgray2 text-lg lg:text-xl ls--048 lh-31 mb-2">
               {{ feat.name }}
             </p>
             <p>{{ feat.description }}</p>
@@ -137,8 +144,10 @@
     <section class="px-98 pt-24">
       <div class="bg-primary text-white text-center py-12 text-center">
         <div class="w-full lg:w-3/5 xl:w-6/12 m-auto">
-          <h3 class="font-bold lh-52 text-4xl pb-7">Come work with us</h3>
-          <p class="text-lg lg:text-xl mb-12">
+          <h3 class="font-bold lh-52 text-2xl lg:text-4xl pb-7">
+            Come work with us
+          </h3>
+          <p class="text-base md:text-lg lg:text-xl mb-12">
             Join us on a journey that transcends travel. Explore the world with
             us and discover the magic that lies beyond the destination. Your
             adventure awaits, and we are here to make it extraordinary.
@@ -149,12 +158,13 @@
       </div>
     </section>
     <section class="px-98 pt-24">
-      <div class="flex">
+      <div class="lg:flex">
         <img
           src="@/assets/images/header-images/customer-care-woman.png"
           alt="female customer rep"
+          class="w-full lg:w-5/12"
         />
-        <div class="px-16 lg:px-32 2xl:px-40">
+        <div class="px-0 lg:px-32 2xl:px-40 mt-4 lg:mt-0">
           <h2 class="font-bold text-4xl lh-42 ls--064 text-dark-gray mb-8">
             Contact Us
           </h2>
@@ -169,7 +179,12 @@
           <base-button variant="primary"
             ><div class="flex">
               <span>Book an appointment</span>
-              <img src="@/assets/images/icons/calendar-check-white.svg" alt="calendar check" class="ml-2" width="18px"/></div
+              <img
+                src="@/assets/images/icons/calendar-check-white.svg"
+                alt="calendar check"
+                class="ml-2"
+                width="18px"
+              /></div
           ></base-button>
         </div>
       </div>
@@ -226,26 +241,48 @@ export default defineComponent({
   &-image {
     height: 100%;
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    object-position: center;
+    object-fit: cover;
     &-container {
-      height: 500px;
+      height: 280px;
+      @media only screen and (min-width: 768px) {
+        height: 300px;
+      }
+      @media (min-width: 1024px) {
+        height: 400px;
+      }
+      @media (min-width: 1280px) {
+        height: 500px;
+      }
       @media (min-width: 1500px) {
         height: 530px;
       }
     }
   }
 }
-.feature {
-  &-container {
-    width: 150px;
-    height: 150px;
-    display: contents;
-  }
-  &-img {
-    // width: 100%;
-    // height: 100%;
-    object-fit: cover;
-  }
-}
+// .feature {
+//   &-container {
+//     width: 100px;
+//     display: block;
+//     // height: 60px;
+//     // display: contents;
+//     @media only screen and (min-width: 768px) {
+//       width: 100px;
+//       // height: 100px;
+//     }
+//     @media (min-width: 1024px) {
+//       width: 120px;
+//       // height: 120px;
+//     }
+//     @media (min-width: 1280px) {
+//       width: 150px;
+//       // height: 150px;
+//     }
+//   }
+//   &-img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//   }
+// }
 </style>

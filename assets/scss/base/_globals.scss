@@ -89,22 +89,46 @@ ul {
       padding-left: 36px !important;
       padding-right: 36px !important;
     }
-    @media only screen and (min-width: 1024px) {
+    @media (min-width: 1024px) {
       padding-left: 52px !important;
       padding-right: 52px !important;
     }
-    @media only screen and (min-width: 1280px) {
+    @media (min-width: 1280px) {
       padding-left: 98px !important;
       padding-right: 98px !important;
     }
   }
   &-162 {
-    padding-right: 113px !important;
-    padding-left: 162px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    @media only screen and (min-width: 768px) {
+      padding-left: 40px !important;
+      padding-right: 40px !important;
+    }
+    @media (min-width: 1024px) {
+      padding-left: 52px !important;
+      padding-right: 52px !important;
+    }
+    @media (min-width: 1280px) {
+      padding-right: 113px !important;
+      padding-left: 162px !important;
+    }
   }
   &-194 {
-    padding-right: 145px !important;
-    padding-left: 194px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    @media only screen and (min-width: 768px) {
+      padding-left: 40px !important;
+      padding-right: 40px !important;
+    }
+    @media (min-width: 1024px) {
+      padding-left: 52px !important;
+      padding-right: 52px !important;
+    }
+    @media (min-width: 1280px) {
+      padding-right: 145px !important;
+      padding-left: 194px !important;
+    }
   }
 }
 
@@ -136,19 +160,29 @@ ul {
 // LINE HEIGHT
 .lh {
   &-77 {
-    line-height: 77px;
+    @media (min-width: 1280px) {
+      line-height: 77px;
+    }
   }
   &-31 {
-    line-height: 31px;
+    @media (min-width: 1280px) {
+      line-height: 31px;
+    }
   }
   &-26 {
-    line-height: 26px;
+    @media (min-width: 1280px) {
+      line-height: 26px;
+    }
   }
   &-42 {
-    line-height: 42px;
+    @media (min-width: 1280px) {
+      line-height: 42px;
+    }
   }
   &-52 {
-    line-height: 52px;
+    @media (min-width: 1280px) {
+      line-height: 52px;
+    }
   }
 }
 // TEXT
