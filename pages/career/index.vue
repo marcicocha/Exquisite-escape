@@ -1,9 +1,13 @@
 <template>
   <div>
     <section class="px-98 bg-light-gray header pt-12 pb-20 mb-20">
-      <div class="w-7/12">
-        <p class="text-dark-gray text-32 lh-42 ls--064">Careers</p>
-        <p class="text-primary lh-77 text-64 font-bold ls--128">
+      <div class="w-full lg:w-7/12">
+        <p class="text-dark-gray text-xl md:text-2xl lg:text-3xl lh-42 ls--064">
+          Careers
+        </p>
+        <p
+          class="text-primary lh-77 text-2xl md:text-4xl lg:text-6xl xl:text-7xl font-bold ls--128"
+        >
           To us, it is more than just travel, let's transform travel together
         </p>
         <p class="mt-4 lh-26 w-2/3">
@@ -24,8 +28,8 @@
         ></base-button>
       </div>
     </section>
-    <section class="flex justify-between px-98 my-24">
-      <div class="w-1/2">
+    <section class="lg:flex justify-between px-98 my-24">
+      <div class="w-full lg:w-1/2">
         <!-- <img
           :src="
             activeKey === 1
@@ -41,7 +45,7 @@
           alt="career feature image"
         />
       </div>
-      <div class="w-1/2">
+      <div class="w-full lg:w-1/2 mt-10 lg:mt-0">
         <p class="font-bold lh-52 ls--08 text-4xl mb-8">
           Exquisite Escape Culture + Values
         </p>
@@ -79,14 +83,14 @@
         </div>
       </div>
     </section>
-    <section class="flex justify-between px-98">
-      <div class="w-1/3">
+    <section class="lg:flex justify-between px-98">
+      <div class="w-full lg:w-1/3 mb-8 lg:mb-0">
         <p class="text-xl text-dark-gray mb-3">At Exquisite escape, we...</p>
         <p class="text-primary font-bold text-4xl lh-52 ls--048">
           we work on important problems
         </p>
       </div>
-      <div class="w-1/2">
+      <div class="w-full lg:w-1/2">
         <p class="text-xl">
           Our fundamental mission revolves around enhancing efficiency within
           the realm of travel and addressing the various challenges that
@@ -139,12 +143,14 @@
       <p class="text-primary mb-4">Have a look at some of the perks we enjoy</p>
       <div>
         <a-carousel arrows autoplay :after-change="carouselHandler">
-          <div class="flex">
+          <div class="flex items-center lg:items-start">
             <div class="w-7/12 mt-12">
-              <h3 class="text-3xl font-bold ls--072 lh-42 w-1/2 mb-2">
+              <h3
+                class="text-xl lg:text-3xl font-bold ls--072 lh-42 w-1/2 mb-2"
+              >
                 Personal growth opportunities
               </h3>
-              <p class="text-lg">
+              <p class="text-sm lg:text-lg">
                 We aspire to witness your progression from being a member to
                 achieving chieftancy status within the Exquisite membership.
                 Whatever path you choose for personal growth and development, we
@@ -158,12 +164,14 @@
               />
             </div>
           </div>
-          <div class="flex">
+          <div class="flex items-center lg:items-start">
             <div class="w-7/12 mt-12">
-              <h3 class="text-3xl font-bold ls--072 lh-42 w-1/2 mb-2">
+              <h3
+                class="text-xl lg:text-3xl font-bold ls--072 lh-42 w-1/2 mb-2"
+              >
                 Flexible public holidays
               </h3>
-              <p class="text-lg">
+              <p class="text-sm lg:text-lg">
                 At Exquisite Escape, your well-being is our top priority. We
                 respect your values and beliefs when scheduling swap days off,
                 and we also make sure to celebrate your birthday with you.
@@ -177,12 +185,14 @@
               />
             </div>
           </div>
-          <div class="flex">
+          <div class="flex items-center lg:items-start">
             <div class="w-7/12 mt-12">
-              <h3 class="text-3xl font-bold ls--072 lh-42 w-1/2 mb-2">
+              <h3
+                class="text-xl lg:text-3xl font-bold ls--072 lh-42 w-1/2 mb-2"
+              >
                 Finance
               </h3>
-              <p class="text-lg">
+              <p class="text-sm lg:text-lg">
                 Being a part of Exquisite Escape comes with enticing benefits,
                 including a competitive salary, the chance to obtain staff stock
                 options, and paid leave opportunities.
@@ -196,12 +206,14 @@
               />
             </div>
           </div>
-          <div class="flex">
+          <div class="flex items-center lg:items-start">
             <div class="w-7/12 mt-12">
-              <h3 class="text-3xl font-bold ls--072 lh-42 w-1/2 mb-2">
+              <h3
+                class="text-xl lg:text-3xl font-bold ls--072 lh-42 w-1/2 mb-2"
+              >
                 Growing together
               </h3>
-              <p class="text-lg">
+              <p class="text-sm lg:text-lg">
                 We dream big and move fast, solving challenging problems
                 together. We also never forget to have fun!
               </p>
@@ -234,7 +246,7 @@
             </div>
           </template>
         </a-carousel>
-        <div class="lg:flex mt-20">
+        <div class="hidden lg:flex mt-20">
           <div
             class="lg:basis-1/4 flex items-start"
             :class="{ 'text-primary': carouselActiveKey === 0 }"
@@ -269,17 +281,19 @@
       </div>
     </section>
     <section class="px-98 my-24">
-      <h1 class="mb-6 text-6xl font-bold lh-77 ls--128">All open roles</h1>
+      <h1 class="mb-4 lg:mb-6 text-2xl lg:text-6xl font-bold lh-77 ls--128">
+        All open roles
+      </h1>
       <p class="text-dark-gray text-base">6 Job position available</p>
       <div
         v-for="(role, index) in openRolesList"
         :key="index"
-        class="mt-9 px-8 py-6 flex justify-between border-primary rounded-xl"
+        class="mt-4 lg:mt-9 px-4 md:px-6 lg:px-8 py-3 md:py-4 lg:py-6 flex justify-between border-primary rounded-xl"
         @click="jobByIdHandler(role.id)"
       >
-        <p class="w-1/4">{{ role.roleName }}</p>
-        <p class="w-1/4">{{ role.location }}</p>
-        <p class="w-1/4">{{ role.category }}</p>
+        <p class="w-6/12 md:w-1/4">{{ role.roleName }}</p>
+        <p class="hidden md:block lg:w-1/4">{{ role.location }}</p>
+        <p class="w-3/12 md:w-1/4">{{ role.category }}</p>
         <p class="text-primary flex items-center">
           <span class="mr-2"> {{ role.roleType }}</span>
           <span class="ml-2"
@@ -386,13 +400,24 @@ export default defineComponent({
     position: absolute;
     bottom: 0;
     right: 0;
-    background-image: url("@/assets/images/illustrations/one-footprint.svg");
+    background-image: none;
     background-size: cover;
     background-position: bottom;
     background-position-x: right;
     background-repeat: no-repeat;
     width: 50%;
     height: 64%;
+    @media only screen and (min-width: 768px) {
+    }
+    @media (min-width: 1024px) {
+      background-image: url("@/assets/images/illustrations/one-footprint.svg");
+    }
+    @media (min-width: 1280px) {
+      height: 500px;
+    }
+    @media (min-width: 1500px) {
+      height: 530px;
+    }
   }
 }
 .ant-collapse-borderless {
