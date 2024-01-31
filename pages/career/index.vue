@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="px-98 bg-light-gray header pt-12 pb-20 mb-20">
-      <div class="w-full lg:w-7/12">
+      <div class="w-full lg:w-7/12 xl:w-6/12">
         <p class="text-dark-gray text-xl md:text-2xl lg:text-3xl lh-42 ls--064">
           Careers
         </p>
