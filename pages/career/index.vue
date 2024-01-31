@@ -6,7 +6,7 @@
           Careers
         </p>
         <p
-          class="text-primary lh-77 text-2xl md:text-4xl lg:text-6xl xl:text-7xl font-bold ls--128"
+          class="text-primary lh-77 text-2xl md:text-3xl lg:text-4xl xl:text-7xl font-bold ls--128"
         >
           To us, it is more than just travel, let's transform travel together
         </p>
@@ -403,7 +403,7 @@ export default defineComponent({
     bottom: 0;
     right: 0;
     background-image: none;
-    background-size: cover;
+    background-size: contain;
     background-position: bottom;
     background-position-x: right;
     background-repeat: no-repeat;
