@@ -29,7 +29,7 @@
       </div>
     </section>
     <section class="lg:flex justify-between px-98 my-24">
-      <div class="w-full lg:w-1/2">
+      <div class="w-full lg:w-1/2 lg:mr-4" >
         <!-- <img
           :src="
             activeKey === 1
@@ -43,9 +43,11 @@
         <img
           src="@/assets/images/header-images/career/counselling.png"
           alt="career feature image"
+          class="w-full h-full object-cover object-top"
+          style="max-height: 400px;"
         />
       </div>
-      <div class="w-full lg:w-1/2 mt-10 lg:mt-0">
+      <div class="w-full lg:w-1/2 mt-10 lg:mt-0 lg:ml-4">
         <p class="font-bold lh-52 ls--08 text-4xl mb-8">
           Exquisite Escape Culture + Values
         </p>
