@@ -22,9 +22,9 @@
           <p class="text-dark-gray text-lg mb-8">Responsibilities</p>
           <p class="text-dark-gray text-lg mb-8">Required Qualifications</p>
           <p class="text-dark-gray text-lg mb-8">Preferred Qualifications</p>
-          <p class="text-dark-gray text-lg mb-8">Renumeration</p>
+          <p class="text-dark-gray text-lg mb-12">Renumeration</p>
         </div>
-        <CareerDescription  class="w-9/12"/>
+        <CareerDescription class="w-9/12" />
       </div>
     </section>
   </div>
@@ -32,13 +32,14 @@
 <script lang="ts">
 import { defineComponent, onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
+import type { RoleObjInterface } from "@/constants/interface/career.ts";
 import CareerDescription from "@/components/career/CareerDescription.vue";
 export default defineComponent({
   components: {
     CareerDescription,
   },
   setup() {
-    const careerObj = ref({});
+    const careerObj = ref<RoleObjInterface>({});
     const activeKey = ref(1);
     const router = useRouter();
     onMounted(() => {
