@@ -29,7 +29,7 @@
       </div>
     </section>
     <section class="lg:flex justify-between px-98 my-24">
-      <div class="w-full lg:w-1/2 lg:mr-4" >
+      <div class="w-full lg:w-1/2 lg:mr-4">
         <!-- <img
           :src="
             activeKey === 1
@@ -44,7 +44,7 @@
           src="@/assets/images/header-images/career/counselling.png"
           alt="career feature image"
           class="w-full h-full object-cover object-top"
-          style="max-height: 400px;"
+          style="max-height: 400px"
         />
       </div>
       <div class="w-full lg:w-1/2 mt-10 lg:mt-0 lg:ml-4">
@@ -291,7 +291,7 @@
         v-for="(role, index) in openRolesList"
         :key="index"
         class="mt-4 lg:mt-9 px-4 md:px-6 lg:px-8 py-3 md:py-4 lg:py-6 flex justify-between border-primary rounded-xl"
-        @click="jobByIdHandler(role.id)"
+        @click="jobByIdHandler(role)"
       >
         <p class="w-6/12 md:w-1/4">{{ role.roleName }}</p>
         <p class="hidden md:block lg:w-1/4">{{ role.location }}</p>
@@ -325,6 +325,7 @@
 </template>
 <script lang="ts">
 import { defineComponent, ref } from "vue";
+import { useRouter } from 'vue-router';
 
 export default defineComponent({
   setup() {
@@ -378,8 +379,8 @@ export default defineComponent({
       carouselActiveKey.value = current;
     };
     const router = useRouter();
-    const jobByIdHandler = (id: number) => {
-      router.push(`/career/${id}`);
+    const jobByIdHandler = (role: any) => {
+      router.push({ path: `/career/${role.id}`, query: { ...role } });
     };
     return {
       activeKey,
